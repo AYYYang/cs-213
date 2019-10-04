@@ -1,0 +1,9 @@
+java Endianness ff ff ff ff 
+java Endianness 00 00 00 00
+java Endianness f0 00 00 00
+java Endianness 00 00 00 ff
+java Endianness 01 02 03 04
+java Endianness 10 00 00 10
+java Endianness ff 01 01 ff
+java Endianness 80 00 00 00
+java Endianness 7f ff ff ff

@@ -1,0 +1,4 @@
+I realized that the computer on Hubble uses the big-endian ordering to store data in memory, and my computer uses the little-endian ordering to store data. I need to mirror/reverse the bytes into:
+
+RA = 0x65F60700
+D = 0xB391DDFF

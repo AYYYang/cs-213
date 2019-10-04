@@ -1,0 +1,2 @@
+0xEF0101EF
+The first 2 bytes are mirrored to the second 2 bytes.
