@@ -1,0 +1,5 @@
+The bug is dangling pointer at lines
+  24: free (e);
+  25: return e->name;
+Once you free e, e points to nothing. 
+I need to somehow store the value of e->name somewhere first

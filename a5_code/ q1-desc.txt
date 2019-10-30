@@ -1,0 +1,7 @@
+
+  v0 = a->x[i]; // write once to v0; read i, a, x, x[i]
+
+  v1 = a->b.y[i]; // i is known , a is known; read b.y[i]; write once to v1
+  v2 = a->b.a->x[i]; // i is known , a is known; read a->b.a, a->b.a->x, a->b.a->x[i]; write once to v2 
+  a->b.a = a; // a is known; write once to a->b.a
+  v3 = a->b.a->b.y[i]; // i is known , a is known, a->b.a is known; read once a->b.a->b.y[i]; write once to v3

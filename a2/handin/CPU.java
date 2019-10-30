@@ -152,7 +152,27 @@ public class CPU extends AbstractSM213CPU {
   else if (insOp0.getUnsigned() == 0xf)
     // nop ........................... ff--
     break;
+  case 0x8: // br a .................. 8-pp  (a = pc + pp * 2)
+        // TODO
         break;
+
+      case 0x9: // beq rs, a ............. 9rpp  (a = pc + pp * 2)
+        // TODO
+        break;
+
+      case 0xa: // bg rs, a .............. arpp  (a = pc + pp * 2)
+        // TODO
+        break;
+
+      case 0xb: // j i ................... b--- iiii iiii
+        // TODO
+        break;
+
+      case 0xc: // j o(rr) ............... crpp  (pp = o / 2)
+        // TODO
+        break;
+      break;
+      
       default:
         throw new InvalidInstructionException();
     }
