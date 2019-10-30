@@ -1,0 +1,7 @@
+memory leaks:
+1) in helper.c, many integer instances are created by calling integer_create, and using malloc allocating memory but never freed.
+2) in integer.c many integer instances are created, and using malloc allocating memory but never freed.
+3) in set_empty, pointers are set to NULL, but the memory is not freed 
+
+Solution: 
+use reference count to keep track of pointers and free the memory in the set_empty method

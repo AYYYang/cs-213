@@ -1,0 +1,5 @@
+line 38: 2 and 1 
+line 39: 3 and 1
+line 40: 4 and 1 
+line 41: 1 and 1
+line 42: 5 and 1

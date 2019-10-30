@@ -1,0 +1,5 @@
+dangling pointer problem: 
+when calling list_delete (l); in main.c, you also call list_delete_element, which freed e. However, the tree struc then try to access e in main.c line :tree_insert_node (t, e); since the memory is freed, e cannot be accessed, creating the dangling pointer problem. 
+
+solution: 
+use reference count to keep track of how many pointers are still pointing to e, when it is at 0, I can free the pointers.
